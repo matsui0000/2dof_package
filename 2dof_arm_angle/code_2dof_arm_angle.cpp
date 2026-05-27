@@ -1070,7 +1070,7 @@ void ArmControlNode::open_log_file(){
     char filename[100];
     time_t date_info = time(NULL);
     struct tm *pnow = localtime(&date_info);
-    sprintf(filename, "/home/takahara/ros2_ws/src/inflatable/data/dof2_arm_angle/%02d%02d_%02d%02d_%02d.csv", 
+    sprintf(filename, "/home/takahara/ros2_ws/data/dof2_arm_angle/%02d%02d_%02d%02d_%02d.csv", 
         pnow->tm_mon + 1, 
         pnow->tm_mday, 
         pnow->tm_hour, 
